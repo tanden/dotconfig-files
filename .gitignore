@@ -17,4 +17,4 @@
 .zsh_history
 .zshenv
 environment/
-
+.cache/
