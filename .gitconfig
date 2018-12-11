@@ -1,0 +1,21 @@
+[user]
+  name = tanden
+[core]
+  editor = /usr/bin/vim
+[alias]
+  lp = log -p
+  ap = add -p
+  co = checkout
+  cop = checkout -p
+  cob = checkout -b
+  l = log
+  a = add
+  p = pull
+  cm = commit -v
+  df = diff --word-diff
+  dfc = diff --cached
+  cma = commit --ammend
+  unstage = reset HEAD
+
+
+
