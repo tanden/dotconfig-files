@@ -18,3 +18,5 @@
 .zshenv
 environment/
 .cache/
+.codeintel/
+.lesshst
