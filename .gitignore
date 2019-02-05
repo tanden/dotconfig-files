@@ -20,3 +20,6 @@ environment/
 .cache/
 .codeintel/
 .lesshst
+.circleci
+.goenv
+.config
