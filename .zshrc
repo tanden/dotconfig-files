@@ -46,6 +46,8 @@ alias -g GI='| grep -ri'
 
 alias g='git'
 
+alias ci='circleci'
+
 # エイリアス
 case "${OSTYPE}" in 
 linux*)
@@ -208,3 +210,8 @@ bindkey '^m' do_enter
 #gopath
 export GOPATH=$HOME/environment/go
 PATH=$PATH:$GOPATH/bin
+
+#goenv
+export GOENV_ROOT=$HOME/.goenv
+export PATH=$GOENV_ROOT/bin:$PATH
+eval "$(goenv init -)"
