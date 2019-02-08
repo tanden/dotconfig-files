@@ -215,3 +215,6 @@ PATH=$PATH:$GOPATH/bin
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
+
+#direnv
+eval "$(direnv hook zsh)"
