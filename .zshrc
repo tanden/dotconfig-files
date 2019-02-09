@@ -8,6 +8,7 @@ autoload -Uz compinit && compinit -i
 export PATH="$HOME/bin:$PATH:$HOME/Cellar"
 ANDROID_HOME=/Users/takaki.sumita/Library/Android/sdk
 export PATH=$PATH:${ANDROID_HOME}/platform-tools
+
 #色を使用
 autoload -Uz colors
 colors
@@ -47,6 +48,8 @@ alias -g GI='| grep -ri'
 alias g='git'
 
 alias ci='circleci'
+
+alias dc='docker-compose'
 
 # エイリアス
 case "${OSTYPE}" in 
