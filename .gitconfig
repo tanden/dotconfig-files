@@ -1,7 +1,7 @@
 [user]
   name = tanden
 [core]
-	editor = vim
+  editor = vim
 [alias]
   lp = log -p
   ap = add -p
