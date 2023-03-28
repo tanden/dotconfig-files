@@ -210,14 +210,15 @@ function do_enter() {
 zle -N do_enter
 bindkey '^m' do_enter
 
-#gopath
-export GOPATH=$HOME/environment/go
-PATH=$PATH:$GOPATH/bin
+# pecoの設定
+bindkey '^]' peco-src
+function peco-src() {
+	local src=$(ghq list --full-path | peco --query "$LBUFFER")
+	if [ -n "$src" ]; then
+		BUFFER="cd $src"
+		zle accept-line
+	fi
+	zle -R -c
+}
+zle -N peco-src
 
-#goenv
-export GOENV_ROOT=$HOME/.goenv
-export PATH=$GOENV_ROOT/bin:$PATH
-eval "$(goenv init -)"
-
-#direnv
-eval "$(direnv hook zsh)"
