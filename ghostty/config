@@ -1,8 +1,8 @@
 # --- Font: 小さめ・長文の読みやすさ重視 ---
 font-family = Moralerspace Xenon HW
-font-size = 11
-# 11pt では縁が滲んで見えたのでオフ
-font-thicken = false
+font-size = 14
+# WQHD では細く見えるのでオン (11pt のときは滲んだのでオフにしていた)
+font-thicken = true
 # 行間を広げて長文を追いやすく
 adjust-cell-height = 8%
 # リガチャ無効 (->, != などを素直に表示)
