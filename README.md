@@ -21,3 +21,16 @@ ln -s "$(pwd)/ghostty/config" ~/.config/ghostty/config
 
 1. [Releases](https://github.com/yuru7/moralerspace/releases) から `MoralerspaceHW_v*.zip` をダウンロードする
 2. `MoralerspaceXenonHW-*.ttf` を `~/Library/Fonts` にコピーする
+
+## Herdr (macOS)
+
+設定は `herdr/config.toml`。`~/.config/herdr/config.toml` からシンボリックリンクで参照する。
+
+```sh
+mkdir -p ~/.config/herdr
+ln -s "$(pwd)/herdr/config.toml" ~/.config/herdr/config.toml
+```
+
+設定後は `herdr server reload-config` で再読み込みする。
+
+現在の設定は、バックグラウンドのワークスペースでエージェントの状態が変わったときの通知音をオフにしている (`[ui.sound] enabled = false`)。
